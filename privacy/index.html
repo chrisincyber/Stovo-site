@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Stovo</title>
-  <meta name="description" content="How Stovo handles your data: no account, no ads, no tracking. Your data stays on your devices and in your own iCloud.">
+  <meta name="description" content="How Stovo handles your data: no account, no ads, no tracking, no server of its own for your lists. Your data stays on your devices and in your own iCloud.">
   <link rel="canonical" href="https://stovo.ch/privacy/">
   <meta name="theme-color" content="#F6EDE2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1E1A18" media="(prefers-color-scheme: dark)">
@@ -25,14 +25,14 @@
 
   <main class="wrap narrow doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Stovo 1.0 · Effective 29 September 2026</p>
+    <p class="meta">Stovo 1.0 · Effective 1 October 2026</p>
 
     <div class="callout">
-      <p><strong>In short:</strong> Stovo has no account, shows no ads, does not track you and sends no analytics to the developer. Your lists and pantry are stored on your devices and, if you use iCloud, in your own iCloud account. The developer cannot see them.</p>
+      <p><strong>In short:</strong> Stovo has no account, shows no ads, does not track you and sends no analytics. Your lists, pantry and household are stored on your devices and, if you use iCloud, in iCloud through Apple’s CloudKit. Stovo has no server of its own that receives them.</p>
     </div>
 
     <h2>Who is responsible</h2>
-    <p>Stovo is developed and published by Christian Petertil. For any privacy question, write to <a href="mailto:info@stovo.ch">info@stovo.ch</a>.</p>
+    <p>Stovo is developed and published by Petertil TripPortier. For any privacy question, write to <a href="mailto:info@stovo.ch">info@stovo.ch</a>.</p>
 
     <h2>What Stovo stores</h2>
     <p>Stovo stores what you enter into it so the app can work:</p>
@@ -45,7 +45,7 @@
     <p>This data is stored on your device. Stovo does not ask for your name, email address, location, contacts or photos, and it has no account to create.</p>
 
     <h2>iCloud sync</h2>
-    <p>If your device is signed in to iCloud, Stovo keeps your data in sync between your devices using Apple’s CloudKit. The data is stored in the private database of <em>your</em> iCloud account, in Stovo’s iCloud container, and is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. The developer has no access to your iCloud data.</p>
+    <p>If your device is signed in to iCloud, Stovo keeps your data in sync between your devices using Apple’s CloudKit. The data is stored in the private database of <em>your</em> iCloud account, in Stovo’s iCloud container, and is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. Stovo does not copy it to any server of its own, and the developer does not operate a service that receives it.</p>
     <p>If you are not signed in to iCloud, your data stays on the device.</p>
 
     <h2>Sharing a household</h2>
@@ -53,6 +53,18 @@
 
     <h2>Sharing a single list</h2>
     <p>You can also share just one shopping list, using the same Apple CloudKit sharing. The people you invite see and edit only that list and the items on it. They do not see your pantry, your purchase history, your categories or your other lists. If you are invited to a list, the Pantry your purchases from it go to is a setting kept in your own iCloud account and synced only between your own devices; the list’s owner and the other people on the list cannot see it.</p>
+
+    <h2>Notifications and reminders</h2>
+    <p>Notifications are off until you turn them on in Stovo’s Settings, and Stovo asks iOS for permission only then. You can turn them off in Stovo or in the iOS Settings app at any time.</p>
+    <ul>
+      <li><strong>Reminders</strong> (shopping and per-list) are <em>local</em> notifications: Stovo schedules them on your device from your lists, and their text — a list name and a number of items — is created on the device. They are not sent through a Stovo server.</li>
+      <li><strong>Sharing updates</strong> (someone joined or left your household or a shared list) are created on your device when iCloud sync reports the change. They use the name iCloud provides for that person, if any.</li>
+      <li>Your notification choices, per-list reminders and the record of which updates were shown are kept on the device only.</li>
+      <li>Stovo does not operate a push notification server and does not collect push tokens. Apple’s CloudKit may wake the app in the background to keep your data in sync; that is handled by Apple.</li>
+    </ul>
+
+    <h2>Stovo Premium</h2>
+    <p>Subscriptions are bought and managed through Apple. Stovo does not receive your Apple Account, payment details or purchase receipts on a server. Stovo reads the subscription’s status from Apple on your device. To give your household Premium, Stovo stores in the household’s synced data an expiry date and an opaque, hashed identifier of the subscription — not your Apple Account. With Apple Family Sharing, Stovo does not see who is in your family.</p>
 
     <h2>Siri and Shortcuts</h2>
     <p>When you use Stovo with Siri or Shortcuts, your request is handled by Apple and Stovo performs the action on your device, for example adding an item to a list. Stovo does not send the request anywhere.</p>
@@ -67,7 +79,7 @@
     </ul>
 
     <h2>Settings kept on your device</h2>
-    <p>Your appearance, unit and currency settings, which list is selected and which household is active are kept on the device only. They are not synced and not sent anywhere.</p>
+    <p>Your appearance, unit and currency settings, your notification choices and reminders, whether Siri &amp; Shortcuts is switched on, which list is selected and which household is active are kept on the device only. They are not synced and not sent anywhere.</p>
 
     <h2>Diagnostics</h2>
     <p>If Stovo ever cannot open its data, it shows a recovery screen with technical details — the error, the size of its data file and how much storage is free on the device. These details stay on your device. You can choose to copy them and send them to support yourself; nothing is sent automatically.</p>
@@ -94,12 +106,12 @@
     <p>If this policy changes, the new version is published on this page with a new effective date.</p>
 
     <h2>Contact</h2>
-    <p>Christian Petertil<br><a href="mailto:info@stovo.ch">info@stovo.ch</a></p>
+    <p>Petertil TripPortier<br><a href="mailto:info@stovo.ch">info@stovo.ch</a></p>
   </main>
 
   <footer>
     <div class="wrap">
-      <span>© 2026 Christian Petertil</span>
+      <span>© 2026 Petertil TripPortier</span>
       <nav aria-label="Footer">
         <a href="../">Home</a>
         <a href="../support/">Support</a>

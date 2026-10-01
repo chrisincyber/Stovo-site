@@ -21,7 +21,10 @@ ALLOWED_EXTERNAL = {
     "https://www.apple.com/legal/privacy/",
     "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
 }
-FORBIDDEN = ["localhost", "127.0.0.1", "github.io", "[Developer name]", "[support email]", "TODO", "lorem"]
+FORBIDDEN = ["localhost", "127.0.0.1", "github.io", "[Developer name]", "[support email]", "TODO", "lorem",
+             # Superseded: the publisher is Petertil TripPortier, and Stovo has no recipes or cooking.
+             "Christian Petertil", "know what you can cook"]
+COPYRIGHT = "© 2026 Petertil TripPortier"
 
 errors = []
 pages = sorted(p for p in glob.glob(os.path.join(ROOT, "**", "*.html"), recursive=True) if "/_site/" not in p)
@@ -35,6 +38,9 @@ for page in pages:
             errors.append(f"{name}: contains “{word}”")
     if "http://" in html:
         errors.append(f"{name}: contains an http:// URL")
+
+    if not is_404 and COPYRIGHT not in html:
+        errors.append(f"{name}: footer should say {COPYRIGHT}")
 
     canonical = re.search(r'<link rel="canonical" href="([^"]+)"', html)
     if not is_404:

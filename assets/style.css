@@ -66,6 +66,18 @@ a:hover { text-decoration-thickness: 2px; }
 .feature h2 { font-size: 18px; margin: 0 0 6px; }
 .feature p { margin: 0; color: var(--muted); font-size: 16px; }
 
+/* Plans */
+.plans { padding-top: 32px; }
+.plans > h2 { font-size: 24px; margin: 0; text-align: center; }
+.feature h3 { font-size: 18px; margin: 0 0 8px; }
+.feature ul { margin: 0; padding-left: 1.2em; color: var(--muted); font-size: 16px; }
+.feature li { margin: 4px 0; }
+.feature.premium { border-color: var(--accent, var(--line)); }
+.feature .note { margin-top: 12px; font-size: 14px; }
+.family { text-align: center; padding: 8px 0 0; }
+.family h3 { font-size: 20px; margin: 16px 0 6px; }
+.family p { margin: 0 auto; max-width: 36em; color: var(--muted); }
+
 /* Screenshots */
 .screens { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; padding: 40px 0 16px; }
 .screens figure { margin: 0; text-align: center; }
