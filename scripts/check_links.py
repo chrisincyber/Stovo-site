@@ -19,6 +19,12 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 SITE = "https://stovo.ch"
 ALLOWED_EXTERNAL = {
     "https://www.apple.com/legal/privacy/",
+    "https://logo.dev",
+    "https://www.logo.dev/legal/privacy",
+    "https://world.openfoodfacts.org",
+    "https://opendatacommons.org/licenses/odbl/1-0/",
+    "https://supabase.com",
+    "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
     "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
 }
 FORBIDDEN = ["localhost", "127.0.0.1", "github.io", "[Developer name]", "[support email]", "TODO", "lorem",
@@ -63,8 +69,8 @@ for page in pages:
                 continue
             target = os.path.normpath(os.path.join(ROOT, ref.lstrip("/")))
         else:
-            target = os.path.normpath(os.path.join(os.path.dirname(page), ref))
-        if ref.endswith("/") or os.path.isdir(target):
+            target = os.path.normpath(os.path.join(os.path.dirname(page), ref.split("#")[0]))
+        if ref.split("#")[0].endswith("/") or os.path.isdir(target):
             target = os.path.join(target, "index.html")
         if not os.path.exists(target):
             errors.append(f"{name}: {ref} does not exist")

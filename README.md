@@ -1,7 +1,7 @@
 # Stovo website
 
-The public website for [Stovo](https://stovo.ch), a shopping list and pantry app for iPhone
-and iPad: home page, privacy policy and support. It contains no app source code — the app
+The public website for [Stovo](https://stovo.ch), a shopping list, pantry and loyalty-card app for iPhone,
+iPad and Apple Watch: home page, privacy policy and support. It contains no app source code — the app
 lives in a separate private repository.
 
 | Page | URL |

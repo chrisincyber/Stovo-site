@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Stovo</title>
-  <meta name="description" content="How Stovo handles your data: no account, no ads, no tracking, no server of its own for your lists. Your data stays on your devices and in your own iCloud.">
+  <meta name="description" content="How Stovo handles your data: no account, no ads, no tracking, no server of its own for your lists. Your data stays on your devices and in your own iCloud. The optional product catalogue is explained here too.">
   <link rel="canonical" href="https://stovo.ch/privacy/">
   <meta name="theme-color" content="#F6EDE2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1E1A18" media="(prefers-color-scheme: dark)">
@@ -19,16 +19,17 @@
       <nav aria-label="Site">
         <a href="../support/">Support</a>
         <a href="./" aria-current="page">Privacy</a>
+        <a href="../terms/">Terms</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap narrow doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Stovo 1.0 · Effective 1 October 2026</p>
+    <p class="meta">Effective 15 October 2026 · Applies to Stovo on iPhone, iPad and Apple Watch</p>
 
     <div class="callout">
-      <p><strong>In short:</strong> Stovo has no account, shows no ads, does not track you and sends no analytics. Your lists, pantry and household are stored on your devices and, if you use iCloud, in iCloud through Apple’s CloudKit. Stovo has no server of its own that receives them.</p>
+      <p><strong>In short:</strong> Stovo has no account, shows no ads, does not track you and sends no analytics. Your lists, pantry and household are stored on your devices and, if you use iCloud, in iCloud through Apple’s CloudKit. Stovo has no server of its own that receives them. A few small things do leave your device, and each is explained below: store logos are loaded from Logo.dev; if you ask for a store to be added, the store name you typed is sent to us; and if you use the optional product catalogue, a scanned barcode is looked up, and product facts you choose to share or confirm go to Stovo’s shared catalogue. Your lists, pantry, purchases and scans never go to the catalogue.</p>
     </div>
 
     <h2>Who is responsible</h2>
@@ -40,9 +41,49 @@
       <li>your shopping lists and their items, with amounts, units and notes;</li>
       <li>your pantry: products, amounts, the batches they came in, where they are kept (Fridge, Pantry or Other), and optional details you add, such as expiration dates and purchase prices;</li>
       <li>your purchase history — what was checked off and when — so a purchase can be undone;</li>
-      <li>your household’s name, your own categories, and your choices for products, such as the category or storage location you picked.</li>
+      <li>your household’s name, your own categories, and your choices for products, such as the category or storage location you picked;</li>
+      <li>your loyalty and membership cards, if you add any (see <a href="#cards">Loyalty cards</a>).</li>
     </ul>
-    <p>This data is stored on your device. Stovo does not ask for your name, email address, location, contacts or photos, and it has no account to create.</p>
+    <p>This data is stored on your device. Stovo does not ask for your name, email address, location or contacts, and it has no account to create. It uses the camera only when you scan a card, and photos only when you choose one yourself.</p>
+
+    <h2 id="cards">Loyalty cards</h2>
+    <p>Stovo can keep your loyalty and membership cards. A card consists of a name, the code type and the code’s content (the number), an optional note, whether it is a favourite, and optionally a picture you choose. Stovo is not a payment wallet and does not store payment cards.</p>
+    <ul>
+      <li><strong>Camera and photos.</strong> To scan a card, Stovo asks iOS for camera access. To import a screenshot, you choose the picture with the system photo picker, so Stovo sees only the picture you pick. The code is read on your device. The camera image and the screenshot are not kept or sent anywhere; Stovo keeps only the code it reads and, for a code it cannot redraw faithfully, a cut-out picture of that barcode.</li>
+      <li><strong>Where cards are stored.</strong> On your device. With iCloud sync on, your cards are also kept in your <em>private</em> iCloud database, with the card’s name, code content, note and picture stored as encrypted fields. They are never part of a shared household or list: people you share with never see your cards.</li>
+      <li><strong>Keep Cards on This Device.</strong> In Settings → iCloud &amp; Sync you can keep cards on the device only. Then nothing about your cards goes to iCloud.</li>
+      <li><strong>Which cards you open</strong> and when is remembered on the device only, to show recent cards first.</li>
+    </ul>
+
+    <h2>Card logos (Logo.dev)</h2>
+    <p>To show a store’s logo on a card, Stovo asks Logo.dev (logo.dev) for the logo by the store’s website address, for example “migros.ch”. That request carries the store’s website address, Stovo’s public access key and, as with any web request, your device’s IP address and basic technical details such as the app’s user agent. It never contains your card number, the barcode, the name you gave the card, or any account information. Logo.dev returns the image, and your device keeps it for up to a day. If logos cannot be loaded, Stovo shows the store’s initials instead and everything else works the same. Logo.dev handles requests under its own <a href="https://www.logo.dev/legal/privacy">privacy policy</a>. Logos provided by <a href="https://logo.dev">Logo.dev</a>.</p>
+
+    <h2>Asking for a store to be added</h2>
+    <p>If you search for a store in Add Card, don’t find it and tap the request button, Stovo sends us the store name as you typed it, your device’s country and language setting, and the app version, over an encrypted connection. The screen shows you what is sent before you send it. It contains nothing that identifies you or your device: no account, no identifier and no card data, and we do not link it to you. We use it only to decide which stores to add. If you are offline, the request waits on your device and is sent later.</p>
+
+    <h2 id="catalogue">Product barcodes and the shared catalogue</h2>
+    <p>In Shopping and the Pantry, Add Item has a <em>Scan product</em> button that looks a packaged product up by its barcode. This part of Stovo is optional, and what you share is your choice. <strong>Your lists, pantry, purchases, household and scan history are never sent to the catalogue or to Open Food Facts</strong>; they stay on your devices and in your iCloud as described above. Stovo keeps no scan history: no list of what you scanned or when. It only remembers the product facts it found, on your device (see the next point).</p>
+    <ul>
+      <li><strong>Looking up a product.</strong> Stovo sends the barcode number and the package market (a country code: your device’s region unless you choose another country) to Stovo’s product catalogue. If the catalogue has nothing, Stovo sends the barcode number to <a href="https://world.openfoodfacts.org">Open Food Facts</a>, a community database whose data is available under the Open Database License. As with any web request, both also see your device’s IP address. A lookup needs no sign-in and carries no identifier. Open Food Facts runs its own servers and keeps its own logs under its own policy. The answer is saved on your device, in a cache that is not backed up, so the same barcode is not asked again straight away.</li>
+      <li><strong>Where Stovo’s catalogue runs.</strong> The catalogue is a database on <a href="https://supabase.com">Supabase</a>, hosted in the EU (Ireland), which processes it on Stovo’s behalf. It holds product facts that people chose to share, and nothing about households. Like any hosting platform, it keeps routine technical request logs, such as time and IP address.</li>
+      <li><strong>Sharing product facts (off until you choose).</strong> If you type in what a package says and choose to share it, you share: the product’s name, brand and size, the ingredients, the allergens you checked on the package, any nutrition values, and the package market (country code). Other Stovo users can then see these facts. They are labelled as community information: “Community submitted” for the name, brand and size, and “Unverified community information” for the rest, until others confirm them. You can turn sharing off at any time in Settings → Products &amp; Nutrition. Facts you add for your own list or pantry are always kept for you, whether or not you share them.</li>
+      <li><strong>“I checked this package”.</strong> You can confirm facts you checked on the package without typing them again. Stovo then sends which facts you ticked (for example “allergens” or “fat”), the package market, and the product’s barcode, not the facts themselves. <em>Report a problem</em> sends the product’s barcode and a reason such as “wrong allergens”, with no free text.</li>
+      <li><strong>What “Community confirmed” means.</strong> A fact is marked “Community confirmed” when at least two other app identities, different from the one that added it, entered or confirmed the same value for the same product and package market. This does not prove that they are different people, and it is not an official check by Stovo or anyone else.</li>
+      <li><strong>Not shared.</strong> Amounts you have at home, expiration dates, lists, your household, notes, prices, purchases, scan history, photos, your name, your email address and your Apple Account.</li>
+    </ul>
+
+    <h2 id="catalogue-signin">The random sign-in used for sharing</h2>
+    <p>Looking up products needs no sign-in. The first time you share product facts, confirm facts or report a problem, Stovo creates a random sign-in with its catalogue server. It has no name, email address or password and is not linked to your Apple Account or iCloud. It is kept in the iOS Keychain on your device only, and Stovo forgets it when you turn sharing off in Settings. It exists for two purposes: to limit abuse (for example, too many submissions), and to count confirmations from separate app identities.</p>
+    <p>How long the server keeps things:</p>
+    <ul>
+      <li>With each contribution, report or confirmation the server stores only a one-way hash of the sign-in, never the sign-in itself. Counters used for limiting abuse are deleted after 7 days. Hashes linked to contributions, reports and confirmations are removed after 30 days, or after up to 90 days while a fact is still waiting for confirmation or a different suggestion is waiting for review. After that, Stovo cannot tell which facts came from you.</li>
+      <li>The sign-in record itself (a random identifier and the times it was created and last used) is deleted when it has not been used for 180 days. A sign-in you keep using is not deleted.</li>
+      <li>The product facts you shared stay in the catalogue as community information; they are not linked to your name or Apple Account. Facts that reached “Community confirmed” stay confirmed after the hashes behind them are gone.</li>
+    </ul>
+    <p>Because the sign-in is random and local to your device, someone who reinstalls Stovo or uses another device gets a new one.</p>
+
+    <h2 id="product-info">Product information is general information</h2>
+    <p>Product and nutrition details are for general information only. They are not an official product label or a guarantee, and may be incomplete, inaccurate or out of date. Always check the package for current information, especially for allergies or intolerances. Stovo does not provide medical or personal dietary advice. Stovo shows no health score of its own; where Open Food Facts supplies a Nutri-Score, it is shown with that source.</p>
 
     <h2>iCloud sync</h2>
     <p>If your device is signed in to iCloud, Stovo keeps your data in sync between your devices using Apple’s CloudKit. The data is stored in the private database of <em>your</em> iCloud account, in Stovo’s iCloud container, and is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. Stovo does not copy it to any server of its own, and the developer does not operate a service that receives it.</p>
@@ -54,13 +95,23 @@
     <h2>Sharing a single list</h2>
     <p>You can also share just one shopping list, using the same Apple CloudKit sharing. The people you invite see and edit only that list and the items on it. They do not see your pantry, your purchase history, your categories or your other lists. If you are invited to a list, the Pantry your purchases from it go to is a setting kept in your own iCloud account and synced only between your own devices; the list’s owner and the other people on the list cannot see it.</p>
 
+    <h2>Apple Watch</h2>
+    <p>The Stovo app on Apple Watch works like the iPhone app: it keeps its own copy of your lists and pantry and syncs it directly with your iCloud account, without a Stovo server. A watch face or Smart Stack widget shows a count of items left and a list name, or a shortcut to a card by its name. It never shows item details, codes or card numbers.</p>
+    <p>Loyalty cards do not come from iCloud to the watch. Your iPhone sends them to your watch directly, over the connection between the two (Bluetooth or Wi-Fi), as finished pictures of the codes. If Keep Cards on This Device is on, cards are sent to the watch only if you switch on Settings → iCloud &amp; Sync → Apple Watch → Cards on Apple Watch. Turning that off, or deleting a card, removes it from the watch the next time the two can connect.</p>
+
+    <h2>Sharing text into Stovo</h2>
+    <p>If you share text from another app (for example a list in Notes) to Stovo, it is handed to Stovo on your device. Stovo shows it for your review before anything is added. It is not sent anywhere.</p>
+
+    <h2>Item pictures</h2>
+    <p>The small picture in front of an item is chosen on your device from the item’s text, from pictures that are part of the app. Nothing is looked up online and no item text is sent.</p>
+
     <h2>Notifications and reminders</h2>
     <p>Notifications are off until you turn them on in Stovo’s Settings, and Stovo asks iOS for permission only then. You can turn them off in Stovo or in the iOS Settings app at any time.</p>
     <ul>
       <li><strong>Reminders</strong> (shopping and per-list) are <em>local</em> notifications: Stovo schedules them on your device from your lists, and their text — a list name and a number of items — is created on the device. They are not sent through a Stovo server.</li>
       <li><strong>Sharing updates</strong> (someone joined or left your household or a shared list) are created on your device when iCloud sync reports the change. They use the name iCloud provides for that person, if any.</li>
       <li>Your notification choices, per-list reminders and the record of which updates were shown are kept on the device only.</li>
-      <li>Stovo does not operate a push notification server and does not collect push tokens. Apple’s CloudKit may wake the app in the background to keep your data in sync; that is handled by Apple.</li>
+      <li>Stovo does not operate a push notification server and does not collect push tokens. Apple’s CloudKit may wake the app, or the Apple Watch app, in the background to keep your data in sync; that is handled by Apple.</li>
     </ul>
 
     <h2>Stovo Premium</h2>
@@ -74,12 +125,12 @@
       <li>No advertising.</li>
       <li>No tracking across apps or websites, and no data brokers.</li>
       <li>No analytics or usage data sent to the developer.</li>
-      <li>No third-party code or SDKs that collect data.</li>
+      <li>No third-party code or SDKs that collect data. The third-party services Stovo contacts are Logo.dev, for store logos, and, only if you use the product catalogue, Open Food Facts and Supabase, as described above.</li>
       <li>No selling or sharing of your data.</li>
     </ul>
 
     <h2>Settings kept on your device</h2>
-    <p>Your appearance, unit and currency settings, your notification choices and reminders, whether Siri &amp; Shortcuts is switched on, which list is selected and which household is active are kept on the device only. They are not synced and not sent anywhere.</p>
+    <p>Your appearance and color theme, whether you share product facts, unit and currency settings, your Apple Watch card choice, your notification choices and reminders, whether Siri &amp; Shortcuts is switched on, which list is selected and which household is active are kept on the device only. They are not synced and not sent anywhere.</p>
 
     <h2>Diagnostics</h2>
     <p>If Stovo ever cannot open its data, it shows a recovery screen with technical details — the error, the size of its data file and how much storage is free on the device. These details stay on your device. You can choose to copy them and send them to support yourself; nothing is sent automatically.</p>
@@ -94,7 +145,7 @@
     <p>None of this information leaves your device unless you send it yourself.</p>
 
     <h2>Keeping and deleting your data</h2>
-    <p>Your data is kept until you delete it. You can delete items, lists and pantry entries in the app at any time. Deleting Stovo removes its data from the device. Data in your iCloud account can be removed in the Settings app under your Apple Account, iCloud, where iCloud storage is managed. Leaving a shared household removes its data from your devices; the owner keeps it.</p>
+    <p>Your data is kept until you delete it. You can delete items, lists and pantry entries in the app at any time. Deleting Stovo removes its data from the device. Data in your iCloud account can be removed in the Settings app under your Apple Account, iCloud, where iCloud storage is managed. Leaving a shared household removes its data from your devices; the owner keeps it. Product facts you shared stay in the catalogue as described in <a href="#catalogue-signin">The random sign-in used for sharing</a>; for a question about something you shared, write to <a href="mailto:info@stovo.ch">info@stovo.ch</a>.</p>
 
     <h2>Children</h2>
     <p>Stovo does not knowingly collect personal data from anyone, including children.</p>
@@ -111,10 +162,11 @@
 
   <footer>
     <div class="wrap">
-      <span>© 2026 Petertil TripPortier</span>
+      <span>© 2026 Petertil TripPortier · <a href="https://logo.dev">Logos provided by Logo.dev</a></span>
       <nav aria-label="Footer">
         <a href="../">Home</a>
         <a href="../support/">Support</a>
+        <a href="../terms/">Terms</a>
       </nav>
     </div>
   </footer>
