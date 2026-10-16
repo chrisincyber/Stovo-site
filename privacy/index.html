@@ -26,10 +26,10 @@
 
   <main class="wrap narrow doc">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective 15 October 2026 · Applies to Stovo on iPhone, iPad and Apple Watch</p>
+    <p class="meta">Effective 16 October 2026 · Applies to Stovo on iPhone, iPad and Apple Watch</p>
 
     <div class="callout">
-      <p><strong>In short:</strong> Stovo has no account, shows no ads, does not track you and sends no analytics. Your lists, pantry and household are stored on your devices and, if you use iCloud, in iCloud through Apple’s CloudKit. Stovo has no server of its own that receives them. A few small things do leave your device, and each is explained below: store logos are loaded from Logo.dev; if you ask for a store to be added, the store name you typed is sent to us; and if you use the optional product catalogue, a barcode is looked up when you scan a product or open its Product Information from the Pantry, and product facts you choose to share or confirm go to Stovo’s shared catalogue. Your lists, pantry, purchases and scans never go to the catalogue.</p>
+      <p><strong>In short:</strong> Stovo has no account, shows no ads, does not track you and sends no analytics unless you turn on optional usage statistics. Your lists, pantry and household are stored on your devices and, if you use iCloud, in iCloud through Apple’s CloudKit. Stovo has no server of its own that receives them. A few small things do leave your device, and each is explained below: store logos are loaded from Logo.dev; if you ask for a store to be added, the store name you typed is sent to us; and if you use the optional product catalogue, a barcode is looked up when you scan a product or open its Product Information from the Pantry, and product facts you choose to share or confirm go to Stovo’s shared catalogue. If you turn on optional usage statistics (off until you do), simple daily counts go to PostHog. If you use voice entry on a language your iPhone cannot recognize on the device, your voice goes to Apple, and only after you agree. Your lists, pantry, purchases and scans never go to the catalogue.</p>
     </div>
 
     <h2>Who is responsible</h2>
@@ -60,6 +60,20 @@
 
     <h2>Asking for a store to be added</h2>
     <p>If you search for a store in Add Card, don’t find it and tap the request button, Stovo sends us the store name as you typed it, your device’s country and language setting, and the app version, over an encrypted connection. The screen shows you what is sent before you send it. It contains nothing that identifies you or your device: no account, no identifier and no card data, and we do not link it to you. We use it only to decide which stores to add. If you are offline, the request waits on your device and is sent later.</p>
+
+    <h2 id="analytics">Usage analytics (optional)</h2>
+    <p>Stovo can send us usage statistics so we can see how often Stovo is used and which features people use. This is <strong>off until you turn it on</strong>. Stovo asks once, after you have used it on a few different days, and you can turn it on or off at any time in Settings → About → Usage Analytics. If you say no, Stovo does not ask again. Before that, nothing is counted, stored or sent. Stovo uses no analytics software package; it sends the statistics itself to PostHog (PostHog Inc., Cloud, EU region), which processes them for us.</p>
+    <p><strong>What we receive.</strong> Once for each day you used Stovo, after that day has ended: the day, the Stovo version, whether it is an App Store or TestFlight version, whether Stovo is installed on your Apple Watch, and counts for that day: how often you opened Stovo, items added and checked off, Pantry items added and stock changes, cards added and opened, taps on widgets, items checked off from widgets and times the Premium screen was shown; and how many items you added in each broad category (for example Dairy or Drinks; categories you created yourself count together as one). We do not receive the time of day you use Stovo. Today’s counts stay on your device until the day is over. We do not collect purchases.</p>
+    <p><strong>What we never receive.</strong> Item names, notes, amounts, list names, category names, card names, numbers or barcodes, your household or iCloud details, your name, email address, contacts or location, your Apple Account, or any device or advertising identifier. There are no records of single items and no screen-by-screen tracking.</p>
+    <p><strong>Random ID.</strong> So that we can tell whether people come back, Stovo creates a random ID when you turn this on. It is not your name, Apple Account, iCloud account or device ID, and we do not link it to any of them. Because it ties the statistics of one installation together over time, we treat the statistics as pseudonymous personal data, not as anonymous data. The ID is kept on your device (it can come back if you restore the device from a backup).</p>
+    <p><strong>IP address.</strong> Like any internet connection, the connection to PostHog carries your device’s IP address. Stovo asks PostHog not to derive a location from it.</p>
+    <p><strong>Turning it off.</strong> You can turn it off at any time in Settings → About → Usage Analytics. Stovo then stops counting and deletes the random ID and everything that has not been sent yet. Statistics already sent cannot be linked back to you afterwards, so we cannot find or delete them on request.</p>
+    <p><strong>Basis.</strong> Your consent, which you can withdraw by turning it off.</p>
+
+
+    <h2 id="voice">Voice entry (optional)</h2>
+    <p>In Shopping and the Pantry you can tap the microphone and say what you need or have. Stovo uses Apple’s speech recognition to turn your words into text, and asks for microphone and speech-recognition permission only when you first use it. If your iPhone can recognize your language on the device, your voice stays on the iPhone. If it cannot, Stovo tells you first and records only if you agree: your voice is then sent to Apple to be turned into text, under Apple’s terms. Stovo does not record, store or send your voice or the text to us. Nothing is added to a list or to your Pantry until you have checked and confirmed it.</p>
+
 
     <h2 id="catalogue">Product barcodes and the shared catalogue</h2>
     <p>In Shopping and the Pantry, Add Item has a <em>Scan product</em> button that looks a packaged product up by its barcode. A Pantry item that has a barcode also has a <em>Product Information</em> row, which shows what is known about the product. This part of Stovo is optional, and what you share is your choice. <strong>Your lists, pantry, purchases, household and scan history are never sent to the catalogue or to Open Food Facts</strong>; they stay on your devices and in your iCloud as described above. Stovo keeps no scan history: no list of what you scanned or when. It only remembers the product facts it found, on your device (see the next point).</p>
@@ -124,8 +138,8 @@
     <ul>
       <li>No advertising.</li>
       <li>No tracking across apps or websites, and no data brokers.</li>
-      <li>No analytics or usage data sent to the developer.</li>
-      <li>No third-party code or SDKs that collect data. The third-party services Stovo contacts are Logo.dev, for store logos, and, only if you use the product catalogue, Open Food Facts and Supabase, as described above.</li>
+      <li>No analytics or usage data sent to the developer unless you turn on Usage Analytics.</li>
+      <li>No third-party code or SDKs that collect data. The third-party services Stovo contacts are Logo.dev, for store logos; only if you use the product catalogue, Open Food Facts and Supabase; and, only if you turn on Usage Analytics, PostHog, as described above.</li>
       <li>No selling or sharing of your data.</li>
     </ul>
 
@@ -138,14 +152,14 @@
     <h2>Apple’s “required reason” APIs</h2>
     <p>Apple asks apps to declare why they use certain system features. Stovo declares:</p>
     <ul>
-      <li><strong>User defaults</strong> (reason CA92.1) — to store the app’s own settings, on the device.</li>
+      <li><strong>User defaults</strong> (reasons CA92.1 and 1C8F.1) — to store the app’s own settings, and to hand a tap on a widget from the widget to the app through their shared App Group, on the device.</li>
       <li><strong>File timestamps and metadata</strong> (reason C617.1) — to read information about Stovo’s own data file inside its app container, such as its size for the recovery details.</li>
       <li><strong>Disk space</strong> (reason 7D9E.1) — to include the free storage in the recovery details, which you may choose to send in a support request.</li>
     </ul>
     <p>None of this information leaves your device unless you send it yourself.</p>
 
     <h2>Keeping and deleting your data</h2>
-    <p>Your data is kept until you delete it. You can delete items, lists and pantry entries in the app at any time. Deleting Stovo removes its data from the device. Data in your iCloud account can be removed in the Settings app under your Apple Account, iCloud, where iCloud storage is managed. Leaving a shared household removes its data from your devices; the owner keeps it. Product facts you shared stay in the catalogue as described in <a href="#catalogue-signin">The random sign-in used for sharing</a>; for a question about something you shared, write to <a href="mailto:info@stovo.ch">info@stovo.ch</a>.</p>
+    <p>Your data is kept until you delete it. You can delete items, lists and pantry entries in the app at any time. Deleting Stovo removes its data from the device. Data in your iCloud account can be removed in the Settings app under your Apple Account, iCloud, where iCloud storage is managed. Leaving a shared household removes its data from your devices; the owner keeps it. Product facts you shared stay in the catalogue as described in <a href="#catalogue-signin">The random sign-in used for sharing</a>; for a question about something you shared, write to <a href="mailto:info@stovo.ch">info@stovo.ch</a>. Usage statistics already sent to PostHog cannot be linked to you after you turn Usage Analytics off, and cannot be deleted on request.</p>
 
     <h2>Children</h2>
     <p>Stovo does not knowingly collect personal data from anyone, including children.</p>
