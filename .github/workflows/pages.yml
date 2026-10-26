@@ -23,10 +23,11 @@ jobs:
       - name: Check links
         run: python3 scripts/check_links.py
       - name: Collect the site
-        # Only what is served: the README, scripts and workflow are not published.
+        # Only what is served: the README, scripts and workflow are not published. .well-known holds the file that
+        # lets invitation links (stovo.ch/join/…) open the Stovo app.
         run: |
           mkdir _site
-          cp -R index.html 404.html CNAME privacy support terms assets _site/
+          cp -R index.html 404.html CNAME privacy support terms assets .well-known _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

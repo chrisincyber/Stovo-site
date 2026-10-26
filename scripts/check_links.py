@@ -78,6 +78,16 @@ for page in pages:
 if open(os.path.join(ROOT, "CNAME")).read().strip() != "stovo.ch":
     errors.append("CNAME: must be stovo.ch")
 
+# The file that lets stovo.ch/join/… open the app: must exist and be valid JSON with the app's id.
+import json
+aasa = os.path.join(ROOT, ".well-known", "apple-app-site-association")
+try:
+    details = json.load(open(aasa, encoding="utf-8"))["applinks"]["details"]
+    if not any("JZU698Q4SL.com.stovo.Stovo" in d.get("appIDs", []) for d in details):
+        errors.append(".well-known/apple-app-site-association: the app id is missing")
+except Exception as error:  # missing, unreadable or not JSON
+    errors.append(f".well-known/apple-app-site-association: {error}")
+
 for message in errors:
     print(message)
 print(f"{len(pages)} pages checked, {len(errors)} problems")

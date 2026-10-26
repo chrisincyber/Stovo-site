@@ -19,6 +19,7 @@ JavaScript, cookies, analytics or external fonts. Light and dark mode follow the
 | --- | --- |
 | `index.html`, `privacy/`, `support/`, `404.html` | The pages |
 | `assets/` | Stylesheet, app icon, favicons, screenshots |
+| `.well-known/apple-app-site-association` | Lets invitation links (`stovo.ch/join/…`) open the Stovo app |
 | `CNAME` | `stovo.ch` (see *Custom domain*) |
 | `scripts/check_links.py` | Link and content check, run before every deployment |
 | `.github/workflows/pages.yml` | Checks and publishes the site |

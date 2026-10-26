@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["JZU698Q4SL.com.stovo.Stovo"],
+        "components": [
+          { "/": "/join/*", "comment": "Stovo invitation links open the app" }
+        ]
+      }
+    ]
+  }
+}
