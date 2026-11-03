@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung — Stovo</title>
+  <meta name="description" content="Wie Stovo mit deinen Daten umgeht: Stovo funktioniert ohne Konto, zeigt keine Werbung und verfolgt dich nicht. Wenn du dich anmeldest, werden deine Daten über Stovos Server in Zürich abgeglichen. Optionale Funktionen werden hier erklärt.">
+  <link rel="canonical" href="https://stovo.ch/privacy/de/">
+  <link rel="alternate" hreflang="en" href="https://stovo.ch/privacy/">
+  <meta name="theme-color" content="#F6EDE2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1E1A18" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="../../assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="../../"><img src="../../assets/favicon-64.png" alt="">Stovo</a>
+      <nav aria-label="Site">
+        <a href="../../support/">Support</a>
+        <a href="./" aria-current="page">Datenschutz</a>
+        <a href="../../terms/">Bedingungen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap narrow doc">
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Gültig ab 3. November 2026 · Gilt für Stovo auf iPhone, iPad und Apple Watch · <a href="../" hreflang="en" lang="en">English</a></p>
+
+    <div class="callout">
+      <p><strong>Kurz gesagt:</strong> Stovo funktioniert ohne Konto. Ohne Konto bleiben deine Daten auf deinem Gerät. Wenn du dich anmeldest, gleicht Stovo deine Daten zwischen deinen Geräten ab und ermöglicht es dir, einen Haushalt oder eine Liste zu teilen; sie werden dann auf Stovos Server gespeichert, einem Supabase-Projekt in Zürich, Schweiz. Deine Kundenkarten, Rezeptordner, Sternebewertungen und privaten Notizen sieht nur du, auch in einem geteilten Haushalt. Stovo zeigt keine Werbung, verfolgt dich nicht und sendet keine Analysedaten, ausser du schaltest die optionale Nutzungsstatistik ein. Ein paar kleine Dinge verlassen dein Gerät, und jedes wird unten erklärt: Shop-Logos werden von Logo.dev geladen; wenn du die Aufnahme eines Geschäfts anfragst, wird uns der eingegebene Name gesendet; beim Scannen eines Produkts wird ein Barcode nachgeschlagen, und Produktangaben, die du von einer Verpackung ergänzt, gehen an Stovos gemeinsamen Katalog; wenn du die Nutzungsstatistik einschaltest (aus, bis du es tust), gehen einfache Tageszahlen an PostHog; wenn du die Spracheingabe in einer Sprache nutzt, die dein iPhone nicht auf dem Gerät erkennen kann, geht deine Stimme an Apple, und nur nachdem du zugestimmt hast. Eine optionale Funktion «Rezeptideen» kann eine Anfrage, die du tippst, an OpenAI senden, und nur nachdem du jede Anfrage bestätigt hast.</p>
+    </div>
+
+    <h2>Wer verantwortlich ist</h2>
+    <p>Stovo wird von seinem Inhaber entwickelt und herausgegeben. Für Fragen zum Datenschutz schreib an <a href="mailto:info@stovo.ch">info@stovo.ch</a>.</p>
+
+    <h2>Was Stovo speichert</h2>
+    <p>Stovo speichert, was du eingibst, damit die App funktioniert:</p>
+    <ul>
+      <li>deine Einkaufslisten und ihre Artikel, mit Mengen, Einheiten und Notizen;</li>
+      <li>deinen Vorrat: Produkte, Mengen, die Chargen, in denen sie kamen, wo sie aufbewahrt werden (Kühlschrank, Vorrat oder Sonstiges) und optionale Angaben wie Ablaufdaten und Einkaufspreise;</li>
+      <li>deinen Einkaufsverlauf — was wann abgehakt wurde — damit ein Einkauf rückgängig gemacht werden kann;</li>
+      <li>deine Rezepte, deinen Essensplan, wer mitisst, sowie deine Sternebewertungen, privaten Notizen, Kochdaten und Rezeptordner;</li>
+      <li>den Namen deines Haushalts, deine eigenen Kategorien und deine Entscheidungen zu Produkten, etwa die gewählte Kategorie oder den Lagerort;</li>
+      <li>deine Kunden- und Mitgliedskarten, falls du welche hinzufügst (siehe <a href="#cards">Kundenkarten</a>).</li>
+    </ul>
+    <p>All das wird auf deinem Gerät gespeichert, und Stovo funktioniert ohne Konto. Wenn du dich anmeldest, wird es zusätzlich auf Stovos Server gespeichert (siehe <a href="#server">Stovos Server</a>). Stovo fragt weder nach deinem Standort noch nach deinen Kontakten und verlangt deine E-Mail-Adresse nur, wenn du dich anmeldest. Die Kamera benutzt Stovo nur, wenn du eine Karte oder ein Produkt scannst, und Fotos nur, wenn du selbst eines auswählst.</p>
+
+    <h2 id="account">Dein Konto (optional)</h2>
+    <p>Die Anmeldung ist optional. Ohne Konto gilt für dich nichts von dem, was hier über Stovos Server steht.</p>
+    <ul>
+      <li><strong>Mit Apple anmelden.</strong> Apple teilt Stovo eine stabile Konto-Kennung mit und, je nach deiner Wahl, deine E-Mail-Adresse oder Apples private Weiterleitungsadresse. Stovo bittet Apple nur um deine E-Mail-Adresse, nicht um deinen Namen.</li>
+      <li><strong>E-Mail-Code.</strong> Du gibst eine E-Mail-Adresse ein, und Stovos Server sendet einen sechsstelligen Code an sie.</li>
+      <li><strong>Anzeigename.</strong> Du wählst einen Namen mit 2 bis 24 Zeichen, den die anderen Mitglieder deines Haushalts sehen. E-Mail-Adressen werden anderen Mitgliedern nie angezeigt.</li>
+      <li>Stovos Anmeldedienst ist Supabase Auth. Er speichert deine Konto-Kennung, deine E-Mail-Adresse (oder Weiterleitungsadresse) und die Sitzungen, die nötig sind, damit du angemeldet bleibst.</li>
+    </ul>
+
+    <h2 id="server">Stovos Server (nur nach der Anmeldung)</h2>
+    <p>Wenn du dich anmeldest, gleicht Stovo deine Daten mit seinem Server ab, einem <a href="https://supabase.com">Supabase</a>-Projekt in Zürich, Schweiz, das sie im Auftrag von Stovo verarbeitet. Was dort gespeichert wird und wer es sehen kann:</p>
+    <ul>
+      <li><strong>Mitglieder deines Haushalts:</strong> Einkaufslisten und Artikel (mit Mengen, Einheiten und Notizen), Produkte, der Vorrat (Mengen, Chargen, Lagerort, Ablaufdaten), Einkaufsverlauf, Kategorien und Einstellungen; mit dem Haushalt geteilte Rezepte (Text, Zutaten, Schritte, Stichwörter und ein Foto), der Essensplan, wer mitisst, Routinen, Abwesenheitstage und Reste; der Name des Haushalts, seine Mitglieder, Einladungs-Token (gehasht gespeichert, eine Woche gültig) und das Ablaufdatum von Premium des Haushalts.</li>
+      <li><strong>Die Personen, denen du einen Link gegeben hast:</strong> eine einzelne Liste, die du geteilt hast, und nur diese Liste.</li>
+      <li><strong>Nur du:</strong> deine Kundenkarten (Name, Code, Notiz und optionale Bilder); deine Rezeptordner und Favoriten, Sternebewertungen, privaten Notizen, Kochdaten und «Nur ich»-Rezepte; deine Wahl des Vorrats für geteilte Listen sowie deine Einheiten- und Währungseinstellungen.</li>
+    </ul>
+    <p>«Nur du» wird durch die Zugriffsregeln des Servers durchgesetzt (Row-Level-Security): Eine Zeile kann nur von dem Konto gelesen werden, zu dem sie gehört. Eine Ausnahme: Wird eine Mahlzeit im geteilten Plan als gekocht markiert, gehört diese Markierung zum Plan des Haushalts, und dein Haushalt sieht sie.</p>
+    <p>Daten werden über verschlüsselte Verbindungen (HTTPS) gesendet. Sie sind nicht Ende-zu-Ende-verschlüsselt: Stovo fügt keine eigene Verschlüsselung hinzu, und der Hosting-Anbieter speichert sie im Auftrag von Stovo. Wie jede Hosting-Plattform führt er übliche technische Protokolle, etwa mit Zeit und IP-Adresse.</p>
+
+    <h2>Einen Haushalt teilen</h2>
+    <p>Die Besitzerin oder der Besitzer eines Haushalts erstellt einen Einladungslink (stovo.ch/join/…, eine Woche gültig). Wer ihn öffnet und sich anmeldet, wird Mitglied und kann die Listen, den Vorrat, den Einkaufsverlauf, die geteilten Rezepte und den Essensplan des Haushalts sehen und bearbeiten. Mitglieder sehen die Anzeigenamen, die Leute gewählt haben, nie E-Mail-Adressen. Ein Mitglied kann jederzeit in Stovos Einstellungen austreten; die Besitzerin oder der Besitzer kann Mitglieder entfernen oder den Haushalt für alle schliessen.</p>
+
+    <h2>Eine einzelne Liste teilen</h2>
+    <p>Du kannst auch nur eine Einkaufsliste per Link teilen. Die eingeladenen Personen sehen und bearbeiten nur diese Liste und ihre Artikel. Sie sehen weder deinen Vorrat noch deinen Einkaufsverlauf, deine Kategorien oder deine anderen Listen. Wenn du zu einer Liste eingeladen wirst, landet, was du daraus kaufst, in dem Vorrat, den du wählst; diese Wahl ist privat, und die Besitzerin oder der Besitzer der Liste sowie die anderen Personen auf der Liste können sie nicht sehen.</p>
+
+    <h2>Apple Watch</h2>
+    <p>Die Stovo-App auf der Apple Watch gleicht Einkauf und Vorrat direkt über HTTPS mit Stovos Server ab, sodass sie auch funktioniert, wenn dein iPhone nicht in der Nähe ist. Dein iPhone übergibt der Watch ein kurzlebiges Zugriffstoken. Die Watch gleicht keine Karten, Rezeptordner, Bewertungen oder Notizen ab und erhebt keine Nutzungsstatistik. Ein Zifferblatt oder ein Smart-Stapel-Widget zeigt die Zahl der offenen Artikel und einen Listennamen oder eine Verknüpfung zu einer Karte mit ihrem Namen. Es zeigt nie Artikeldetails, Codes oder Kartennummern.</p>
+    <p>Kundenkarten kommen von deinem iPhone direkt auf die Watch, über die Verbindung zwischen beiden (Bluetooth oder WLAN), als fertige Bilder der Codes. Ist «Karten nur auf diesem Gerät behalten» eingeschaltet, werden Karten nur dann an die Watch gesendet, wenn du in den Einstellungen «Karten auf der Apple Watch» einschaltest. Schaltest du das aus oder löschst eine Karte, wird sie von der Watch entfernt, sobald beide wieder verbunden sind.</p>
+
+    <h2 id="cards">Kundenkarten</h2>
+    <p>Stovo kann deine Kunden- und Mitgliedskarten aufbewahren. Eine Karte besteht aus einem Namen, dem Codetyp und dem Inhalt des Codes (der Nummer), einer optionalen Notiz, der Angabe, ob sie ein Favorit ist, und optional einem Bild, das du auswählst. Stovo ist kein Zahlungs-Wallet und speichert keine Zahlungskarten.</p>
+    <ul>
+      <li><strong>Kamera und Fotos.</strong> Zum Scannen einer Karte bittet Stovo iOS um Kamerazugriff. Um einen Screenshot zu importieren, wählst du das Bild mit der System-Fotoauswahl, sodass Stovo nur das gewählte Bild sieht. Der Code wird auf deinem Gerät gelesen. Das Kamerabild und der Screenshot werden weder aufbewahrt noch irgendwohin gesendet; Stovo behält nur den gelesenen Code und, bei einem Code, den es nicht originalgetreu nachzeichnen kann, einen Ausschnitt dieses Barcodes als Bild.</li>
+      <li><strong>Wo Karten gespeichert werden.</strong> Auf deinem Gerät. Wenn du angemeldet bist, werden deine Karten zusätzlich auf Stovos Server gespeichert, nur in deinem eigenen Konto. Sie sind nie Teil eines geteilten Haushalts oder einer geteilten Liste: Personen, mit denen du teilst, sehen deine Karten nie. Sie sind nicht Ende-zu-Ende-verschlüsselt.</li>
+      <li><strong>Karten nur auf diesem Gerät behalten.</strong> In den Einstellungen kannst du Karten nur auf dem Gerät behalten. Dann geht nichts zu deinen Karten an Stovos Server.</li>
+      <li><strong>Welche Karten du öffnest</strong> und wann, wird nur auf dem Gerät gemerkt, um zuletzt benutzte Karten zuerst zu zeigen.</li>
+    </ul>
+
+    <h2>Shop-Logos (Logo.dev)</h2>
+    <p>Um das Logo eines Geschäfts auf einer Karte zu zeigen, fragt Stovo Logo.dev (logo.dev) anhand der Website-Adresse des Geschäfts nach dem Logo, zum Beispiel «migros.ch». Diese Anfrage enthält die Website-Adresse des Geschäfts, Stovos öffentlichen Zugriffsschlüssel und, wie bei jeder Webanfrage, die IP-Adresse deines Geräts und grundlegende technische Angaben wie den User-Agent der App. Sie enthält nie deine Kartennummer, den Barcode, den Namen, den du der Karte gegeben hast, oder Kontoangaben. Logo.dev liefert das Bild, und dein Gerät behält es bis zu einem Tag. Lassen sich Logos nicht laden, zeigt Stovo die Initialen des Geschäfts, und alles andere funktioniert gleich. Logo.dev behandelt Anfragen nach seiner eigenen <a href="https://www.logo.dev/legal/privacy">Datenschutzerklärung</a>. Logos von <a href="https://logo.dev">Logo.dev</a>.</p>
+
+    <h2>Die Aufnahme eines Geschäfts anfragen</h2>
+    <p>Wenn du in «Karte hinzufügen» nach einem Geschäft suchst, es nicht findest und die Anfrage-Taste tippst, sendet Stovo uns den Namen des Geschäfts, wie du ihn getippt hast, die Länder- und Spracheinstellung deines Geräts und die App-Version über eine verschlüsselte Verbindung. Der Bildschirm zeigt dir vor dem Senden, was gesendet wird. Es enthält nichts, was dich oder dein Gerät identifiziert: kein Konto, keine Kennung und keine Kartendaten, und wir verknüpfen es nicht mit dir. Wir nutzen es nur, um zu entscheiden, welche Geschäfte wir aufnehmen. Die Anfrage wird von einem kleinen Dienst entgegengenommen, der für Stovo betrieben wird und bei Vercel gehostet ist, und über Resend per E-Mail an uns weitergeleitet. Bist du offline, wartet die Anfrage auf deinem Gerät und wird später gesendet.</p>
+
+    <h2 id="recipes">Rezepte</h2>
+    <ul>
+      <li><strong>Import über einen Link.</strong> Stovo stellt von deinem Gerät aus eine einzige Anfrage nach der Seite, die du geteilt hast, direkt an diese Website (ohne Cookies, ohne Konto). Die Website sieht deine IP-Adresse und die angefragte Adresse, als hättest du den Link in einem Browser geöffnet. Nichts geht an Stovo oder an einen KI-Dienst. Links von Instagram werden nicht abgefragt; füge stattdessen den Text der Bildunterschrift ein.</li>
+      <li><strong>Import aus Bildern oder PDF.</strong> Text in Bildern und auf PDF-Seiten, die nur aus Bildern bestehen, wird auf deinem Gerät mit Apples Texterkennung gelesen. Nichts wird irgendwohin gesendet.</li>
+      <li><strong>Fotos.</strong> Ein Rezeptfoto, das du wählst, wird mit dem Rezept gespeichert und, wenn du angemeldet bist, auf Stovos Server.</li>
+      <li><strong>Schnell hinzufügen aus Text, im Essensplaner und per Sprache</strong> liest, was du tippst oder sagst, mit Regeln auf deinem Gerät und zeigt dir eine Vorschau. Nichts davon geht an einen Server (zur Sprache siehe <a href="#voice">Spracheingabe</a>).</li>
+      <li><strong>Nährwertschätzungen</strong> für ein Rezept werden auf deinem Gerät aus den Zutaten berechnet, mit Zahlen der Schweizer Nährwertdatenbank, die Teil der App sind.</li>
+    </ul>
+
+    <h2 id="calendar">Kalender (optional)</h2>
+    <p>Wenn du es erlaubst, schreibt Stovo deine geplanten Mahlzeiten als Termine in einen Kalender auf deinem Telefon und hält sie aktuell. Es ändert nur Termine, die es selbst angelegt hat. Die Termine werden von deinem Kalenderkonto (zum Beispiel iCloud oder Google) nach den Bedingungen dieses Anbieters gespeichert. Stovo sendet sie dafür nicht an seinen eigenen Server.</p>
+
+    <h2 id="catalogue">Produkt-Barcodes und der gemeinsame Katalog</h2>
+    <p>In Einkauf und Vorrat hat «Artikel hinzufügen» eine Taste <em>Produkt scannen</em>, die ein verpacktes Produkt anhand seines Barcodes nachschlägt. Ein Vorratsartikel mit Barcode hat zudem eine Zeile <em>Produktinformationen</em>, die zeigt, was über das Produkt bekannt ist. Das Nachschlagen ist deine Entscheidung: Nichts wird nachgeschlagen, bis du scannst oder <em>Produktinformationen</em> antippst, und Scannen allein übermittelt nie etwas an den Katalog. <strong>Deine Listen, dein Vorrat, deine Einkäufe, dein Haushalt und dein Scan-Verlauf werden nie an den Katalog oder an Open Food Facts gesendet</strong>; sie bleiben auf deinen Geräten und, wenn du dich anmeldest, in deinem Konto, wie oben beschrieben. Stovo führt keinen Scan-Verlauf: keine Liste dessen, was du wann gescannt hast. Es merkt sich nur die gefundenen Produktangaben auf deinem Gerät (siehe nächster Punkt).</p>
+    <ul>
+      <li><strong>Ein Produkt nachschlagen.</strong> Ein Produkt wird nachgeschlagen, wenn du seinen Barcode scannst und wenn du <em>Produktinformationen</em> für einen Vorratsartikel mit Barcode öffnest (nur wenn du es antippst). Hat Stovo die Angaben des Produkts bereits auf deinem Gerät gespeichert, nutzt es diese und muss eventuell nichts nachschlagen; bist du offline, zeigt es das Gespeicherte. Sonst sendet Stovo die Barcode-Nummer und den Packungsmarkt (einen Ländercode: die Region deines Geräts, ausser du wählst ein anderes Land) an Stovos Produktkatalog. Zusätzlich fragt Stovo <a href="https://world.openfoodfacts.org">Open Food Facts</a> an, eine Community-Datenbank, deren Daten unter der Open Database License verfügbar sind, wenn der Katalog für deinen Packungsmarkt nichts hat und wenn der Katalog das Produkt zwar hat, aber ohne Angaben wie Scores oder Nährwerte (ausser du hast in Einstellungen → Produkte &amp; Nährwerte sowohl <em>Produkt-Scores anzeigen</em> als auch <em>Nährwerte anzeigen</em> ausgeschaltet). Diese Anfrage enthält nur die Barcode-Nummer und die Sprache, in der Stovo angezeigt wird, und geht direkt von deinem Telefon an Open Food Facts (nicht über Stovo), sodass Open Food Facts wie jede Website deine IP-Adresse sieht. Deine Listen, dein Vorrat und dein Haushalt werden nie gesendet. Wie bei jeder Webanfrage sehen beide auch die IP-Adresse deines Geräts. Ein Nachschlagen braucht keine Anmeldung und enthält keine Kennung. Open Food Facts betreibt eigene Server und führt eigene Protokolle nach seiner eigenen Richtlinie. Die Antwort wird auf deinem Gerät in einem Zwischenspeicher gesichert, der nicht in Backups enthalten ist, damit derselbe Barcode nicht gleich wieder angefragt wird. Wenn Open Food Facts sie hat, kann die Antwort den Nutri-Score des Produkts und wie er berechnet wurde enthalten, seine NOVA-Verarbeitungsgruppe, seine Nährstoffgehalte (niedrig, mittel oder hoch bei Fett, gesättigtem Fett, Zucker und Salz), aus der Zutatenliste geschätzte Ernährungsangaben (zum Beispiel vegetarisch oder vegan), auf der Verpackung aufgedruckte Labels und seine Zusatzstoffe. Stovo zeigt diese so an, wie Open Food Facts sie liefert, berechnet oder bewertet sie nicht und fragt den Namen und die Zutaten des Produkts in der Sprache ab, in der Stovo angezeigt wird, sodass diese Sprache Teil der Anfrage ist. Sie werden nur in diesem Zwischenspeicher auf deinem Gerät gesichert und nirgendwohin gesendet. Du kannst sie mit der Einstellung <em>Produkt-Scores anzeigen</em> in Einstellungen → Produkte &amp; Nährwerte ausblenden.</li>
+      <li><strong>Wo Stovos Katalog läuft.</strong> Der Katalog ist eine Datenbank bei <a href="https://supabase.com">Supabase</a> mit Standort Schweiz (Zürich), die sie im Auftrag von Stovo verarbeitet. Sie enthält die Produktangaben, die Leute ergänzt haben, und nichts über Haushalte. Wie jede Hosting-Plattform führt sie übliche technische Anfrageprotokolle, etwa mit Zeit und IP-Adresse.</li>
+      <li><strong>Produktangaben von einer Verpackung ergänzen.</strong> Ist ein gescanntes Produkt nicht im Katalog oder sind seine Angaben falsch, kannst du eintippen, was auf der Verpackung steht. Wenn du in diesem Formular <em>Hinzufügen</em> tippst, werden die Angaben geteilt; das Formular sagt es. Nur diese Taste übermittelt etwas: Das Scannen eines Produkts nicht. Stovo speichert dann in seinem gemeinsamen Katalog, zusammen mit dem Barcode: den Namen des Produkts (nur wenn du ihn getippt oder geändert oder bestätigt hast, dass er zur Verpackung passt), Marke und Grösse, ob es ein Lebensmittel ist oder nicht, die Zutaten, die Allergene, die du angekreuzt hast, allfällige Nährwerte, den Packungsmarkt (einen Ländercode) und den Sprachcode deines Geräts. Andere Stovo-Nutzerinnen und -Nutzer sehen sie sofort, wenn sie diesen Barcode nachschlagen, gekennzeichnet als Community-Angaben: «Von der Community eingereicht» für Name, Marke und Grösse und «Ungeprüfte Community-Angaben» für den Rest, bis andere sie bestätigen. Weil der Katalog eine Anfrage für jeden genauen Barcode beantwortet, können die Angaben technisch von allen gesehen werden, die nach diesem Barcode fragen, nicht nur von Leuten, die die App nutzen. Ein abweichender Wert für eine Angabe, die der Katalog schon hat, wartet auf Prüfung und wird nicht angezeigt. Stovo prüft Einreichungen auf Spam und unmögliche Werte und kann Angaben zurückhalten, ändern oder entfernen, zum Beispiel wenn sich zwei Einreichungen widersprechen oder eine Angabe als falsch gemeldet wird. Eine Einreichung kannst du in der App nicht selbst bearbeiten oder löschen. Angaben, die du ergänzt, bleiben auch auf deinem Gerät für dich gespeichert, selbst wenn der Katalog sie ablehnt oder das Hochladen scheitert; ein gescheiterter Upload wird nicht automatisch erneut gesendet.</li>
+      <li><strong>«Ich habe diese Verpackung geprüft».</strong> Du kannst Angaben bestätigen, die du auf der Verpackung geprüft hast, ohne sie erneut zu tippen. Stovo sendet dann, welche Angaben du angekreuzt hast (zum Beispiel «Allergene» oder «Fett»), den Packungsmarkt und den Barcode des Produkts, nicht die Angaben selbst. <em>Problem melden</em> sendet den Barcode des Produkts und einen Grund wie «falsche Allergene», ohne Freitext.</li>
+      <li><strong>Was «Von der Community bestätigt» bedeutet.</strong> Eine Angabe wird als «Von der Community bestätigt» gekennzeichnet, wenn mindestens zwei andere App-Identitäten, die sich von derjenigen unterscheiden, die sie ergänzt hat, denselben Wert für dasselbe Produkt und denselben Packungsmarkt eingegeben oder bestätigt haben. Das beweist nicht, dass es verschiedene Personen sind, und es ist keine amtliche Prüfung durch Stovo oder jemand anderen.</li>
+      <li><strong>Nicht geteilt.</strong> Mengen, die du zu Hause hast, Ablaufdaten, Listen, dein Haushalt, Notizen, Preise, Einkäufe, Scan-Verlauf, Fotos, dein Name, deine E-Mail-Adresse und dein Apple-Account.</li>
+    </ul>
+
+    <h2 id="catalogue-signin">Die zufällige Anmeldung für das Teilen</h2>
+    <p>Das Nachschlagen von Produkten braucht keine Anmeldung. Wenn du zum ersten Mal Produktangaben ergänzt, Angaben bestätigst oder ein Problem meldest, erstellt Stovo eine zufällige Anmeldung bei seinem Katalogserver. Sie hat keinen Namen, keine E-Mail-Adresse und kein Passwort und ist weder mit deinem Apple-Account noch mit deinem Stovo-Konto verknüpft. Sie wird nur im iOS-Schlüsselbund deines Geräts gespeichert (sie wird nicht synchronisiert oder auf einem anderen Gerät wiederhergestellt). Es gibt keine Einstellung, sie auszuschalten: Sie wird nur erstellt, wenn du ergänzt, bestätigst oder meldest, und der Server löscht sie nach 180 Tagen ohne Nutzung (siehe unten). Sie dient zwei Zwecken: Missbrauch zu begrenzen (zum Beispiel zu viele Einreichungen) und Bestätigungen von verschiedenen App-Identitäten zu zählen.</p>
+    <p>Wie lange der Server Dinge aufbewahrt:</p>
+    <ul>
+      <li>Bei jeder Einreichung, Meldung oder Bestätigung speichert der Server nur einen Einweg-Hash der Anmeldung, nie die Anmeldung selbst. Zähler zur Missbrauchsbegrenzung werden nach 7 Tagen gelöscht. Hashes, die zu Einreichungen, Meldungen und Bestätigungen gehören, werden nach 30 Tagen entfernt, oder bis zu 90 Tage nach der letzten Bestätigung, solange eine Angabe noch auf Bestätigung wartet oder ein abweichender Vorschlag auf Prüfung wartet. Danach kann Stovo nicht mehr feststellen, welche Angaben von dir stammen, und kann sie deshalb weder finden noch für dich löschen; du kannst eine Angabe in der App als falsch melden oder uns schreiben.</li>
+      <li>Der Anmeldedatensatz selbst (eine zufällige Kennung sowie Zeitpunkt der Erstellung und letzten Nutzung) wird gelöscht, wenn er 180 Tage nicht genutzt wurde. Eine Anmeldung, die du weiter nutzt, wird nicht gelöscht.</li>
+      <li>Die Produktangaben, die du geteilt hast, bleiben als Community-Angaben im Katalog; sie sind nicht mit deinem Namen oder Apple-Account verknüpft. Angaben, die «Von der Community bestätigt» erreicht haben, bleiben bestätigt, auch nachdem die Hashes dahinter weg sind.</li>
+    </ul>
+    <p>Weil die Anmeldung zufällig und lokal auf deinem Gerät ist, erhält ein anderes Gerät seine eigene.</p>
+
+    <h2 id="product-info">Produktinformationen sind allgemeine Informationen</h2>
+    <p>Produkt- und Nährwertangaben dienen nur der allgemeinen Information. Sie sind keine amtliche Produktkennzeichnung und keine Garantie und können unvollständig, ungenau oder veraltet sein. Prüfe immer die Verpackung auf aktuelle Angaben, besonders bei Allergien oder Unverträglichkeiten. Stovo gibt keine medizinischen oder persönlichen Ernährungsratschläge. Stovo zeigt keinen eigenen Gesundheits-Score; wo Open Food Facts einen Nutri-Score, eine NOVA-Gruppe oder Nährstoffgehalte liefert, werden sie als Angaben dieser Quelle gezeigt, können unvollständig oder falsch sein und sagen nichts über deine Gesundheit.</p>
+
+    <h2 id="voice">Spracheingabe (optional)</h2>
+    <p>In Einkauf und Vorrat kannst du das Mikrofon antippen und sagen, was du brauchst oder hast. Stovo nutzt Apples Spracherkennung, um deine Worte in Text umzuwandeln, und bittet erst bei der ersten Nutzung um die Berechtigung für Mikrofon und Spracherkennung. Kann dein iPhone deine Sprache auf dem Gerät erkennen, bleibt deine Stimme auf dem iPhone. Kann es das nicht, sagt Stovo es dir zuerst und nimmt nur auf, wenn du zustimmst: Deine Stimme wird dann an Apple gesendet, um in Text umgewandelt zu werden, nach Apples Bedingungen. Stovo nimmt deine Stimme oder den Text nicht auf, speichert sie nicht und sendet sie nicht an uns. Nichts wird einer Liste oder deinem Vorrat hinzugefügt, bis du es geprüft und bestätigt hast.</p>
+
+    <h2 id="assistant">Dinge in Worten ändern (auf deinem Gerät)</h2>
+    <p>In Einkauf, Vorrat, Essensplaner und auf einem Rezept kannst du eintippen, was du gekauft oder verbraucht hast, oder darum bitten, eine geplante Mahlzeit zu verschieben, zu ersetzen oder zu entfernen, oder fragen, was du kochen kannst. Stovo liest, was du getippt hast, auf deinem iPhone mit festen Wortlisten auf Deutsch und Englisch. <strong>Nichts, was du tippst, wird an Stovo, an OpenAI oder sonst jemanden gesendet.</strong> Wenn dein iPhone Apple Intelligence unterstützt, kann Stovo zusätzlich Apples Modell auf dem iPhone selbst um Hilfe bitten: ein Rezept schreiben, eine kurze Kochfrage beantworten oder ein Rezept aus den Namen dessen vorschlagen, was in deinem Vorrat ist; dieses Modell läuft auf dem Gerät. Ein Foto von einem Kassenzettel, einer handgeschriebenen Liste oder von Essen wird ebenfalls auf dem iPhone gelesen.</p>
+    <p>Bevor sich etwas ändert, zeigt Stovo, wie jeder Eintrag jetzt ist und wie er danach sein wird, fragt dich, wenn mehrere Einträge passen könnten oder eine Menge fehlt, und ändert nichts, bis du bestätigst. «Nur ich»-Rezepte werden beim Planen für den Haushalt nie angeboten oder genannt.</p>
+    <p>Danach kannst du die ganze Änderung 30 Minuten lang rückgängig machen, wenn nichts davon seither bearbeitet wurde (von dir oder von jemandem in deinem Haushalt). Dafür behält Stovo eine kurze Notiz nur auf deinem iPhone: die Kennungen, Mengen und Daten dessen, was es geändert hat, ohne Namen. Sie wird gelöscht, wenn du rückgängig machst, wenn sie abläuft oder wenn du die App entfernst, und Stovo gleicht sie nicht ab. Die Änderungen selbst sind gewöhnliche Bearbeitungen und werden wie jede andere Bearbeitung mit deinem Haushalt abgeglichen.</p>
+
+    <h2 id="recipe-ideas">Rezeptideen (optional, nutzt OpenAI)</h2>
+    <p>«Rezeptideen» ist eine eigene, optionale Funktion. Sie wird nur angezeigt, wenn du angemeldet bist, und nur in App-Versionen, die sie enthalten. In einer App-Version ohne sie wird kein KI-Dienst genutzt. Stovos andere Schnell-hinzufügen-Funktionen und sein Assistent laufen auf deinem Gerät und senden nichts an OpenAI.</p>
+    <p><strong>Was gesendet wird und wann.</strong> Du tippst, worauf du Lust hast. Bevor etwas dein Telefon verlässt, zeigt dir Stovo den genauen Text und fragt «Diese Anfrage an OpenAI senden?». Nichts wird gesendet, bis du <strong>Anfrage senden</strong> tippst. Die Frage wird bei jeder Anfrage gestellt, und deine Antwort wird nie gemerkt. Brichst du ab oder gehst zurück, wird nichts gesendet.</p>
+    <p><strong>Genau das wird gesendet</strong> (von der App an Stovos Server und von Stovos Server an OpenAI):</p>
+    <ul>
+      <li>der Text, den du getippt hast, höchstens 500 Zeichen;</li>
+      <li>ein Sprachcode (en oder de);</li>
+      <li>Stovos feste Anweisungen an das Modell;</li>
+      <li>ein Einweg-Hash (SHA-256) deiner Konto-Kennung, den OpenAI als «Sicherheitskennung» nutzt, um Missbrauch zu erkennen. Deine Konto-Kennung selbst, dein Name und deine E-Mail-Adresse werden nicht an OpenAI gesendet.</li>
+    </ul>
+    <p><strong>Nicht gesendet:</strong> dein Vorrat, deine Einkaufslisten, Rezepte (geteilte oder «Nur ich»), dein Essensplan, dein Haushalt, Kundenkarten, Notizen, Bewertungen, Fotos oder dein Standort. Bitte gib in deiner Anfrage keine persönlichen Angaben ein: Was du tippst, wird so gesendet, wie du es geschrieben hast.</p>
+    <p><strong>Stovos Server.</strong> Die Anfrage läuft über eine Funktion auf Stovos Server, die prüft, dass du mit einem echten Konto angemeldet bist. Sie speichert deine Anfrage und die Antwort nicht und protokolliert sie nicht (sie protokolliert nur feste Wendungen und Statuscodes). Um Limits durchzusetzen, führt Stovos Datenbank einen täglichen Anfragezähler pro Person und einen Gesamtzähler: deine Konto-Kennung, den Tag und eine Zahl, nie den Anfragetext. Wie jeder Server verarbeitet sie die IP-Adresse in der Anfrage.</p>
+    <p><strong>Umgang bei OpenAI.</strong> Stovo bittet OpenAI, die Antwort nicht zu speichern. Das heisst für sich allein nicht, dass OpenAI nichts aufbewahrt. Laut der Entwicklerdokumentation von OpenAI werden an seine API gesendete Daten standardmässig nicht zum Training oder zur Verbesserung seiner Modelle verwendet, und Protokolle zur Missbrauchserkennung werden bis zu 30 Tage aufbewahrt. Dein Anfragetext kann also bis zu 30 Tage bei OpenAI bleiben. OpenAI hat seinen Sitz in den USA und verarbeitet Anfragen auf seinen Servern dort und anderswo; Stovo wählt keine Datenregion.</p>
+    <p><strong>Übermittlung ins Ausland.</strong> OpenAI befindet sich ausserhalb der Schweiz und der Europäischen Union. Dass deine Anfrage an OpenAI geht, geschieht nur, weil du gelesen hast, was gesendet wird, und <strong>Anfrage senden</strong> getippt hast: Deine ausdrückliche Einwilligung für diese Anfrage ist die Grundlage der Übermittlung. Willst du das nicht, nutze «Rezeptideen» nicht; der Rest von Stovo sendet nie etwas an OpenAI.</p>
+    <p><strong>Was zurückkommt.</strong> Bis zu drei Rezeptvorschläge. Jeder ist im Rezept selbst als «KI-Vorschlag (ungetestet)» gekennzeichnet. Stovo prüft sie mit festen Regeln, nicht mit dem Modell: Eine Anfrage, die etwas nennt, das kein Lebensmittel ist, wird auf deinem Telefon abgelehnt, bevor etwas gesendet wird, und eine Antwort, die so etwas enthält, wird verworfen; ein Rezept mit einer Temperatur in Fahrenheit wird verworfen; und ein Rezept mit Fleisch, Geflügel, Fisch oder Meeresfrüchten erhält einen festen Hinweis, den Stovo und nicht das Modell geschrieben hat, nach dem Bundesamt für Lebensmittelsicherheit und Veterinärwesen: Fleisch, Geflügel, Fisch und Meeresfrüchte auf mindestens 70 °C erhitzen, rohes Fleisch und rohen Fisch von anderen Lebensmitteln trennen und für rohe und gekochte Lebensmittel getrennte Bretter und Utensilien verwenden. Diese Prüfungen sind ein Sicherheitsnetz, keine Garantie: Ein Vorschlag kann trotzdem falsch oder unsicher sein. Vorschläge beginnen als «Nur ich»-Rezepte, nichts wird gespeichert, bis du sie übernimmst, und du kannst sie bearbeiten oder verwerfen. Stovo prüft sie nicht auf Allergene und behauptet nie, ein Vorschlag sei bei einer Allergie oder einer medizinischen Diät sicher. Prüfe Kochzeiten und Temperaturen immer anhand verlässlicher Quellen.</p>
+    <p><strong>Grundlage.</strong> Deine Einwilligung für jede Anfrage, die du verweigerst, indem du «Anfrage senden» nicht tippst.</p>
+
+    <h2 id="analytics">Nutzungsstatistik (optional)</h2>
+    <p>Stovo kann uns eine Nutzungsstatistik senden, damit wir sehen, wie oft Stovo genutzt wird und welche Funktionen gebraucht werden. Sie ist <strong>aus, bis du sie einschaltest</strong>. Stovo fragt einmal, nachdem du es an einigen verschiedenen Tagen genutzt hast, und du kannst sie jederzeit in Einstellungen → Über Stovo → Nutzungsstatistik ein- oder ausschalten. Sagst du nein, fragt Stovo nicht mehr. Vorher wird nichts gezählt, gespeichert oder gesendet. Stovo nutzt kein Analyse-Softwarepaket; es sendet die Statistik selbst an PostHog (PostHog Inc., Cloud, EU-Region), das sie für uns verarbeitet.</p>
+    <p><strong>Was wir erhalten.</strong> Einmal für jeden Tag, an dem du Stovo genutzt hast, nachdem dieser Tag zu Ende ist: den Tag, die Stovo-Version, ob es eine App-Store- oder TestFlight-Version ist, ob Stovo auf deiner Apple Watch installiert ist, und Zahlen für diesen Tag: wie oft du Stovo geöffnet hast, hinzugefügte und abgehakte Artikel, hinzugefügte Vorratsartikel und Bestandsänderungen, hinzugefügte und geöffnete Karten, Antippen von Widgets, über Widgets abgehakte Artikel und wie oft die Premium-Seite gezeigt wurde; und wie viele Artikel du in jeder groben Kategorie hinzugefügt hast (zum Beispiel Milchprodukte oder Getränke; selbst erstellte Kategorien zählen zusammen als eine). Die Tageszeit, zu der du Stovo nutzt, erhalten wir nicht. Die Zahlen von heute bleiben auf deinem Gerät, bis der Tag vorbei ist. Wir erfassen keine Einkäufe.</p>
+    <p><strong>Was wir nie erhalten.</strong> Artikelnamen, Notizen, Mengen, Listennamen, Kategorienamen, Kartennamen, -nummern oder Barcodes, Angaben zu deinem Haushalt oder Konto, deinen Namen, deine E-Mail-Adresse, Kontakte oder Standort, deinen Apple-Account oder irgendeine Geräte- oder Werbekennung. Es gibt keine Datensätze zu einzelnen Artikeln und keine Verfolgung von Bildschirm zu Bildschirm.</p>
+    <p><strong>Zufällige ID.</strong> Damit wir erkennen, ob Leute wiederkommen, erstellt Stovo beim Einschalten eine zufällige ID. Sie ist nicht dein Name, Apple-Account, Stovo-Konto oder deine Geräte-ID, und wir verknüpfen sie mit keinem davon. Weil sie die Statistik einer Installation über die Zeit verbindet, behandeln wir die Statistik als pseudonyme Personendaten, nicht als anonyme Daten. Die ID wird auf deinem Gerät gespeichert (sie kann zurückkommen, wenn du das Gerät aus einem Backup wiederherstellst).</p>
+    <p><strong>IP-Adresse.</strong> Wie jede Internetverbindung übermittelt die Verbindung zu PostHog die IP-Adresse deines Geräts. Wir haben PostHog so eingestellt, dass es sie nicht speichert, und Stovo bittet PostHog, daraus keinen Standort abzuleiten.</p>
+    <p><strong>Ausschalten.</strong> Du kannst sie jederzeit in Einstellungen → Über Stovo → Nutzungsstatistik ausschalten. Stovo hört dann auf zu zählen und löscht die zufällige ID und alles, was noch nicht gesendet wurde. Bereits gesendete Statistik lässt sich danach nicht mehr dir zuordnen, deshalb können wir sie auf Anfrage weder finden noch löschen. PostHog behält sie bis zu einem Jahr.</p>
+    <p><strong>Grundlage.</strong> Deine Einwilligung, die du widerrufen kannst, indem du sie ausschaltest.</p>
+
+    <h2>Text in Stovo teilen</h2>
+    <p>Wenn du Text aus einer anderen App (zum Beispiel eine Liste in Notizen) mit Stovo teilst, wird er auf deinem Gerät an Stovo übergeben. Stovo zeigt ihn dir zur Prüfung, bevor etwas hinzugefügt wird. Er wird nirgendwohin gesendet.</p>
+
+    <h2>Artikelbilder</h2>
+    <p>Das kleine Bild vor einem Artikel wird auf deinem Gerät anhand des Artikeltextes aus Bildern gewählt, die Teil der App sind. Es wird nichts online nachgeschlagen und kein Artikeltext gesendet.</p>
+
+    <h2>Mitteilungen und Erinnerungen</h2>
+    <p>Mitteilungen sind aus, bis du sie in Stovos Einstellungen einschaltest, und Stovo bittet erst dann iOS um die Berechtigung. Du kannst sie jederzeit in Stovo oder in der iOS-Einstellungen-App ausschalten.</p>
+    <ul>
+      <li><strong>Erinnerungen</strong> (Einkauf und pro Liste) sind <em>lokale</em> Mitteilungen: Stovo plant sie auf deinem Gerät anhand deiner Listen, und ihr Text — ein Listenname und eine Anzahl Artikel — wird auf dem Gerät erzeugt.</li>
+      <li><strong>Bald verbrauchen</strong> (optional) ist höchstens eine Mitteilung pro Tag, nur wenn etwas in deinem Vorrat bald abläuft. Sie wird auf deinem Gerät aus deinem Vorrat erzeugt und erinnert dich daran, die Packung zu prüfen; sie sagt nichts über das Lebensmittel aus.</li>
+      <li>Deine Mitteilungseinstellungen und Erinnerungen pro Liste bleiben nur auf dem Gerät.</li>
+      <li>Stovo betreibt keinen Push-Mitteilungs-Server und erhebt keine Push-Token.</li>
+    </ul>
+
+    <h2>Stovo Premium</h2>
+    <p>Abonnements werden über Apple gekauft und verwaltet. Stovo erhält deinen Apple-Account, Zahlungsangaben oder Kaufbelege nicht auf einem Server. Stovo liest den Status des Abonnements auf deinem Gerät von Apple. Damit dein Haushalt Premium erhält, speichert Stovo in den abgeglichenen Daten des Haushalts ein Ablaufdatum und eine undurchsichtige, gehashte Kennung des Abonnements — nicht deinen Apple-Account. Bei Familienfreigabe sieht Stovo nicht, wer in deiner Familie ist.</p>
+
+    <h2>Siri, Kurzbefehle und Widgets</h2>
+    <p>Wenn du Stovo mit Siri oder Kurzbefehlen nutzt, wird deine Anfrage von Apple bearbeitet, und Stovo führt die Aktion auf deinem Gerät aus, zum Beispiel einen Artikel zu einer Liste hinzuzufügen oder dir das geplante Abendessen von heute zu sagen. Stovo sendet die Anfrage nirgendwohin. Widgets und Zifferblätter zeigen Zahlen, Listennamen und geplante Mahlzeiten von deinem Gerät.</p>
+
+    <h2>Was Stovo nicht tut</h2>
+    <ul>
+      <li>Keine Werbung.</li>
+      <li>Kein Tracking über Apps oder Websites hinweg und keine Datenhändler.</li>
+      <li>Keine Analyse- oder Nutzungsdaten an den Entwickler, ausser du schaltest die Nutzungsstatistik ein.</li>
+      <li>Kein Fremdcode und keine SDKs, die Daten erheben. Die Dienste, die Stovo kontaktiert, sind Apple (Anmeldung, Käufe, Spracherkennung, wenn du zustimmst, Siri); Supabase (Stovos Server und Katalog); Logo.dev für Shop-Logos; Open Food Facts, nur wenn du den Produktkatalog nutzt; Vercel und Resend, nur wenn du die Aufnahme eines Geschäfts anfragst; PostHog, nur wenn du die Nutzungsstatistik einschaltest; OpenAI, nur für «Rezeptideen», nachdem du jede Anfrage bestätigt hast; und die Websites, von denen du Rezepte importierst, nur wenn du einen Link importierst.</li>
+      <li>Kein Verkauf und keine Weitergabe deiner Daten.</li>
+    </ul>
+
+    <h2>Einstellungen, die nur auf deinem Gerät bleiben</h2>
+    <p>Dein Erscheinungsbild und Farbthema, Einheiten- und Währungseinstellungen, deine Wahl für Karten auf der Apple Watch, deine Mitteilungseinstellungen und Erinnerungen, ob Siri &amp; Kurzbefehle eingeschaltet ist, welche Liste ausgewählt ist und welcher Haushalt aktiv ist, bleiben nur auf dem Gerät. Sie werden weder abgeglichen noch irgendwohin gesendet.</p>
+
+    <h2>Diagnose</h2>
+    <p>Kann Stovo seine Daten einmal nicht öffnen, zeigt es einen Wiederherstellungsbildschirm mit technischen Angaben — dem Fehler, der Grösse seiner Datendatei und wie viel Speicher auf dem Gerät frei ist. Diese Angaben bleiben auf deinem Gerät. Du kannst sie kopieren und selbst an den Support senden; automatisch wird nichts gesendet.</p>
+
+    <h2>Apples «Required Reason»-APIs</h2>
+    <p>Apple verlangt von Apps die Angabe, warum sie bestimmte Systemfunktionen nutzen. Stovo gibt an:</p>
+    <ul>
+      <li><strong>User Defaults</strong> (Gründe CA92.1 und 1C8F.1) — um die eigenen Einstellungen der App zu speichern und ein Antippen eines Widgets über ihre gemeinsame App Group auf dem Gerät vom Widget an die App zu übergeben.</li>
+      <li><strong>Datei-Zeitstempel und Metadaten</strong> (Grund C617.1) — um Angaben zu Stovos eigener Datendatei in seinem App-Container zu lesen, etwa ihre Grösse für die Wiederherstellungsangaben.</li>
+      <li><strong>Speicherplatz</strong> (Grund 7D9E.1) — um den freien Speicher in die Wiederherstellungsangaben aufzunehmen, die du bei einer Support-Anfrage mitsenden kannst.</li>
+    </ul>
+    <p>Nichts davon verlässt dein Gerät, ausser du sendest es selbst.</p>
+
+    <h2 id="deleting">Aufbewahrung und Löschung deiner Daten</h2>
+    <ul>
+      <li>Deine Daten werden aufbewahrt, bis du sie löschst. Du kannst Artikel, Listen, Rezepte und Vorratseinträge jederzeit in der App löschen. Wenn du Stovo löschst, werden seine Daten vom Gerät entfernt, nicht aber dein Konto auf Stovos Server.</li>
+      <li><strong>Dein Konto löschen</strong> kannst du in Einstellungen → Konto → Konto löschen. Haushalte, die dir gehören und andere aktive Mitglieder haben, gehen an das Mitglied, das zuerst beigetreten ist, und behalten ihre geteilten Daten. Haushalte, die dir gehören und in denen niemand sonst ist, werden mit allem darin gelöscht. Dein Konto wird gelöscht, und mit ihm deine Mitgliedschaften, deine Karten, Rezeptordner, Bewertungen, privaten Notizen, «Nur ich»-Rezepte, Einstellungen und Einladungen. Dein Name wird bei Artikeln entfernt, die du in verbleibenden Haushalten hinzugefügt hast. Hast du dich mit Apple angemeldet, bittet Stovo Apple, die Anmeldung zu widerrufen. Supabase kann übliche Backups und Protokolle nach der Löschung noch begrenzte Zeit aufbewahren.</li>
+      <li>Löschungen bleiben auf dem Server bis zu 180 Tage als Markierungen erhalten, damit deine anderen Geräte davon erfahren, und werden dann entfernt.</li>
+      <li>Verlässt du einen geteilten Haushalt, werden seine Daten von deinen Geräten entfernt; die Besitzerin oder der Besitzer behält sie.</li>
+      <li>Produktangaben, die du ergänzt hast, bleiben im Katalog, wie unter <a href="#catalogue-signin">Die zufällige Anmeldung für das Teilen</a> beschrieben; bei Fragen zu etwas, das du geteilt hast, schreib an <a href="mailto:info@stovo.ch">info@stovo.ch</a>.</li>
+      <li>Bereits an PostHog gesendete Nutzungsstatistik lässt sich nach dem Ausschalten nicht mehr dir zuordnen und kann auf Anfrage nicht gelöscht werden; PostHog behält sie bis zu einem Jahr.</li>
+      <li>Die Einstellungen bieten einen lesbaren Text-Export deiner offenen Einkaufsartikel, deines Vorrats und deiner Rezepte. Er ist eine Kopie zum Lesen, kein Backup, das sich wiederherstellen lässt.</li>
+      <li>Rezeptideen: Stovo bewahrt deine Anfrage und die Antwort nicht auf. Die Aufbewahrung bei OpenAI ist oben beschrieben.</li>
+    </ul>
+
+    <h2 id="rights">Deine Rechte</h2>
+    <p>Nach dem Schweizer Bundesgesetz über den Datenschutz und, soweit es für dich gilt, der EU-Datenschutz-Grundverordnung kannst du Auskunft über deine Daten verlangen, Berichtigung oder Löschung, eine Kopie der Daten, die du bereitgestellt hast, sowie die Einschränkung oder den Widerspruch der Nutzung, und du kannst eine erteilte Einwilligung jederzeit widerrufen (zum Beispiel für die Spracheingabe, die Nutzungsstatistik oder «Rezeptideen»). Schreib an <a href="mailto:info@stovo.ch">info@stovo.ch</a>; wir antworten innert 30 Tagen. Du kannst dich beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) oder in der EU bei deiner örtlichen Aufsichtsbehörde beschweren.</p>
+    <p><strong>Rechtsgrundlagen.</strong> Vertrag (Betrieb der App und deines Kontos), Einwilligung (Spracheingabe ausserhalb des Geräts, Nutzungsstatistik, Anfragen für «Rezeptideen») und berechtigtes Interesse (Sicherheit und Missbrauchsgrenzen des Katalogs).</p>
+
+    <h2 id="transfers">Wo Daten verarbeitet werden</h2>
+    <p>Stovos eigener Server steht in der Schweiz (Zürich). Andere Anbieter können Daten ausserhalb der Schweiz und der Europäischen Union verarbeiten: Apple; PostHog (EU-Region); Open Food Facts; Logo.dev; Vercel und Resend (nur Geschäftsanfragen); GitHub (diese Website); und OpenAI, in den USA, nur für «Rezeptideen». Jeder erhält nur, was diese Erklärung sagt. Zu OpenAI siehe <a href="#recipe-ideas">Rezeptideen</a>: Die Übermittlung geschieht nur mit deiner ausdrücklichen Einwilligung für jede Anfrage.</p>
+
+    <h2>Kinder</h2>
+    <p>Stovo erhebt wissentlich keine Personendaten von irgendjemandem, auch nicht von Kindern.</p>
+
+    <h2>Diese Website</h2>
+    <p>Diese Website verwendet keine Cookies, keine Analyse und keine Skripte oder Schriften von Dritten. Sie wird bei GitHub Pages gehostet; GitHub kann deine IP-Adresse verarbeiten, um die Seite auszuliefern und zu schützen, wie in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a> beschrieben.</p>
+
+    <h2>Änderungen</h2>
+    <p>Ändert sich diese Erklärung, wird die neue Fassung auf dieser Seite mit neuem Datum veröffentlicht. Bei wesentlichen Änderungen informiert Stovo in der App.</p>
+
+    <h2>Kontakt</h2>
+    <p><a href="mailto:info@stovo.ch">info@stovo.ch</a></p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Petertil TripPortier · <a href="https://logo.dev">Logos provided by Logo.dev</a></span>
+      <nav aria-label="Footer">
+        <a href="../../">Home</a>
+        <a href="../../support/">Support</a>
+        <a href="../../terms/">Bedingungen</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
