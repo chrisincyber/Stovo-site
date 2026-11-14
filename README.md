@@ -17,7 +17,9 @@ JavaScript, cookies, analytics or external fonts. Light and dark mode follow the
 
 | Path | What it is |
 | --- | --- |
-| `index.html`, `privacy/`, `support/`, `404.html` | The pages |
+| `index.html`, `privacy/`, `support/`, `terms/`, `404.html` | The pages (English) |
+| `fr/`, `es/`, `it/`, `ja/`, `<page>/de/`, `<page>/fr/` … | Translations: the home page lives at `<lang>/`, every other page at `<page>/<lang>/`. Each page lists all its versions as `hreflang` alternates (plus `x-default` = English) and has a language switcher in the header; `sitemap.xml` lists them all. English is authoritative: translated privacy and terms pages say so near the top |
+| `sitemap.xml`, `robots.txt` | Search engine files |
 | `assets/` | Stylesheet, app icon, favicons, screenshots |
 | `.well-known/apple-app-site-association` | Lets invitation links (`stovo.ch/join/…`) open the Stovo app |
 | `CNAME` | `stovo.ch` (see *Custom domain*) |
@@ -30,7 +32,7 @@ GitHub Pages serves it at any missing path.
 ## Testing locally
 
 ```sh
-python3 scripts/check_links.py     # links, canonical URLs, no placeholders
+python3 scripts/check_links.py     # links, anchors, canonical URLs, languages/hreflang, sitemap, no placeholders
 python3 -m http.server 8000        # then open http://localhost:8000/
 ```
 

@@ -27,7 +27,7 @@ jobs:
         # lets invitation links (stovo.ch/join/…) open the Stovo app.
         run: |
           mkdir _site
-          cp -R index.html 404.html CNAME privacy support terms assets .well-known _site/
+          cp -R index.html 404.html CNAME robots.txt sitemap.xml fr es it ja privacy support terms assets .well-known _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
